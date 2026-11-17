@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>성인학습자 AI 활용 강좌</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&display=swap">
+<style>
+/* main.html과 같은 남색·주황 팔레트 */
+:root{--bg:#F7F5F0;--surface:#FFFDF8;--ink:#1F2A44;--sub:#5A6378;--line:#E2DDD2;--acc:#C4621A;--accInk:#FFFFFF;--mark:#F2A65A;
+--hero:#1F2A44;--heroInk:#F7F5F0;--chip:#EDE8DF;
+--font:'Noto Sans KR','Malgun Gothic','Apple SD Gothic Neo',sans-serif}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#161B27;--surface:#1F2636;--ink:#ECE8DF;--sub:#A9AFBD;--line:#333C50;--acc:#E8894A;--accInk:#161B27;--hero:#2A3550;--heroInk:#ECE8DF;--chip:#2A3245;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#161B27;--surface:#1F2636;--ink:#ECE8DF;--sub:#A9AFBD;--line:#333C50;--acc:#E8894A;--accInk:#161B27;--hero:#2A3550;--heroInk:#ECE8DF;--chip:#2A3245;color-scheme:dark}
+*{box-sizing:border-box}
+html,body{height:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--font);line-height:1.6}
+.wrap{min-height:100%;max-width:1200px;margin:0 auto;padding:clamp(24px,6vh,72px) max(16px,4vw);display:flex;flex-direction:column;justify-content:center;gap:clamp(24px,5vh,48px)}
+.eyebrow{color:var(--acc);font-weight:700;font-size:clamp(14px,1.4vw,20px);margin:0}
+h1{font-size:clamp(30px,4.6vw,64px);line-height:1.2;font-weight:900;margin:.25em 0 0;text-wrap:balance}
+.lead{color:var(--sub);font-size:clamp(16px,1.6vw,22px);margin:.5em 0 0}
+.cards{display:grid;grid-template-columns:repeat(2,1fr);gap:clamp(14px,2vw,28px)}
+@media (max-width:760px){.cards{grid-template-columns:1fr}}
+.card{display:flex;flex-direction:column;gap:12px;padding:clamp(20px,2.6vw,40px);border-radius:16px;border:1px solid var(--line);background:var(--surface);color:var(--ink);text-decoration:none}
+a.card{background:var(--hero);color:var(--heroInk);border-color:var(--hero);transition:transform .15s,box-shadow .15s}
+a.card:hover{transform:translateY(-3px);box-shadow:0 14px 30px rgba(31,42,68,.28)}
+a.card:focus-visible{outline:4px solid var(--acc);outline-offset:4px}
+.when{font-weight:700;font-size:clamp(14px,1.3vw,18px);color:var(--mark)}
+.soon .when{color:var(--acc)}
+.card h2{font-size:clamp(24px,2.7vw,38px);margin:0;line-height:1.25}
+.topics{margin:0;font-size:clamp(15px,1.3vw,18px);opacity:.82}
+.steps{display:flex;flex-wrap:wrap;gap:8px;list-style:none;padding:0;margin:6px 0 10px}
+.steps li{font-size:14px;padding:4px 11px;border-radius:999px;background:rgba(255,255,255,.12)}
+.soon .steps li{background:var(--chip);color:var(--sub)}
+.steps b{font-variant-numeric:tabular-nums}
+.go{margin-top:auto;align-self:flex-start;background:var(--acc);color:var(--accInk);font-weight:700;padding:10px 22px;border-radius:999px;font-size:clamp(15px,1.4vw,20px)}
+.soonTag{margin-top:auto;align-self:flex-start;color:var(--sub);border:1px dashed var(--line);padding:8px 18px;border-radius:999px;font-size:15px}
+footer{color:var(--sub);font-size:14px;display:flex;flex-wrap:wrap;gap:4px 16px;justify-content:space-between}
+@media (hover:none){.kbd{display:none}}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+</head><body>
+<main class="wrap">
+<div>
+<p class="eyebrow">대원대학교 성인학습자 AI 활용 강좌</p>
+<h1>두 번의 수업,<br>내 손으로 만드는 결과물</h1>
+<p class="lead">리포트를 쓰고, 그 리포트로 발표자료와 대본까지 만듭니다.</p>
+</div>
+
+<div class="cards">
+<a class="card" href="main.html" id="s1">
+<span class="when">1회차 · 11월 18일</span>
+<h2>AI 플랫폼 시작하기</h2>
+<p class="topics">안전수칙 · 프롬프트 기초 · 과제 리포트 작성</p>
+<ul class="steps"><li><b>10분</b> 진단·안전</li><li><b>20분</b> 플랫폼·질문 연습</li><li><b>60분</b> 리포트 실습</li><li><b>10분</b> 정리</li></ul>
+<span class="go">수업 시작 →</span>
+</a>
+<div class="card soon" aria-disabled="true">
+<span class="when">2회차 · 11월 25일</span>
+<h2>AI를 활용한 PPT 제작</h2>
+<p class="topics">발표 흐름 설계 · 슬라이드 제작 · 발표 대본</p>
+<ul class="steps"><li><b>10분</b> 복습</li><li><b>20분</b> 구성 설계</li><li><b>40분</b> PPT 실습</li><li><b>20분</b> 발표 대본</li><li><b>10분</b> 정리</li></ul>
+<span class="soonTag">11월 25일에 열립니다</span>
+</div>
+</div>
+
+<footer><span>강사 지만영 · 참고: 인사혁신처 『업무 효율성 향상을 위한 AI 활용 가이드』</span><span class="kbd">→ 키나 프레젠터로도 1회차로 넘어갑니다</span></footer>
+</main>
+<script>
+/* 첫 화면에서 → / PageDown / Space(프레젠터) 누르면 1회차로 */
+document.addEventListener('keydown',e=>{
+ if(e.ctrlKey||e.altKey||e.metaKey)return;
+ if(e.key==='ArrowRight'||e.key==='PageDown'||e.key===' '){e.preventDefault();location.href=document.getElementById('s1').href}});
+</script>
+</body></html>
